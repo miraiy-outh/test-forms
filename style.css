@@ -1,0 +1,164 @@
+:root {
+  --background-color: #efebde;
+  --header-color: #245fd6;
+  --border-color: #d8d8c8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  min-width: 950px;
+}
+
+.form-header {
+  color: var(--header-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+.header {
+  color: var(--header-color);
+  font-style: italic;
+  position: relative;
+  top: -26px;
+  display: inline-block;
+  background-color: var(--background-color);
+}
+
+.main-header {
+  font-weight: bold;
+}
+
+.label__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+
+.label {
+  font-weight: bold;
+  max-width: 190px;
+  text-align: right;
+}
+
+.optional-label {
+  margin-right: 13px;
+}
+
+.star {
+  font-weight: bold;
+  color: red;
+}
+
+.main-text {
+  font-weight: bold;
+}
+
+.declaration-text {
+  margin: 0 0 16px 36px;
+}
+
+textarea {
+  resize: vertical;
+}
+.container {
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  margin: 8px;
+  padding: 16px;
+}
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.external-container {
+  padding-right: 24px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.form-large-container {
+  align-items: center;
+}
+
+.name-form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-form__large {
+  margin-top: 8px;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.checkbox-address-container {
+  margin-right: 280px;
+  padding: 8px 0 16px 0;
+}
+
+.checkbox-container {
+  justify-content: flex-start;
+  margin-left: 100px;
+}
+
+.form-payment-container {
+  margin: 0 308px 8px 0;
+}
+
+.payments__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.payment__container {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.form-label {
+  font-size: 12px;
+}
+
+.name-form,
+.select-form {
+  width: 640px;
+}
+
+.middle-form {
+  width: 240px;
+}
+
+.short-form {
+  width: 120px;
+}
+
+.middle-margin {
+  margin-right: 400px;
+}
+
+.short-margin {
+  margin-right: 520px;
+}
