@@ -68,6 +68,7 @@ $(document).ready(function () {
     if ($(".person-doc").get(0).files.length === 0) {
       $(".person-doc__button").css("border-color", "red");
       $(".agreement-checkbox").css("outline", "1px solid red");
+
       event.preventDefault();
     }
   }
