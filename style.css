@@ -17,6 +17,7 @@ body {
   color: var(--header-color);
   font-weight: bold;
   text-align: center;
+  margin: 48px;
 }
 
 .header {
@@ -53,6 +54,11 @@ body {
 .star {
   font-weight: bold;
   color: red;
+  margin-top: 4px;
+}
+
+.doc-star {
+  visibility: hidden;
 }
 
 .main-text {
@@ -73,17 +79,17 @@ textarea {
   padding: 16px;
 }
 
-.forms-container {
+.forms__container {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.external-container {
+.external__container {
   padding-right: 24px;
 }
 
-.form-container {
+.form__container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -91,7 +97,7 @@ textarea {
   gap: 4px;
 }
 
-.form-large-container {
+.form-large__container {
   align-items: center;
 }
 
@@ -105,24 +111,29 @@ textarea {
   margin-top: 8px;
 }
 
-.address-container {
+.address__container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 4px;
 }
 
-.checkbox-address-container {
+.checkbox-address__container {
   margin-right: 280px;
   padding: 8px 0 16px 0;
 }
 
-.checkbox-container {
-  justify-content: flex-start;
-  margin-left: 100px;
+.checkboxes__container {
+  margin-top: 16px;
 }
 
-.form-payment-container {
+.checkbox__container {
+  justify-content: flex-start;
+  margin-left: 100px;
+  align-items: center;
+}
+
+.form-payment__container {
   margin: 0 308px 8px 0;
 }
 
@@ -136,6 +147,44 @@ textarea {
   display: flex;
   flex-direction: row;
   gap: 4px;
+}
+
+.agreement__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.optional-checkbox {
+  margin-left: 8px;
+}
+
+.person-doc__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 24px 0 48px;
+}
+
+.person-doc__subcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.person-doc__text {
+  font-size: 18px;
+}
+
+.person-doc {
+  display: none;
+}
+
+.person-doc__button {
+  cursor: pointer;
 }
 
 .form-label {
@@ -161,4 +210,23 @@ textarea {
 
 .short-margin {
   margin-right: 520px;
+}
+
+.submit__container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 48px 50px 24px;
+}
+
+.post-address__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.postal-service__container {
+  display: none;
+}
+
+.requisites__container {
+  display: none;
 }

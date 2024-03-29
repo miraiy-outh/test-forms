@@ -14,8 +14,8 @@
       <div class="container">
         <div class="main-header header">Сведения о заявителе</div>
 
-        <div class="forms-container external-container">
-          <div class="form-container">
+        <div class="forms__container external__container">
+          <div class="form__container">
             <div class="label__container">
               <span class="label">Фамилия</span>
               <span class="star">*</span>
@@ -26,10 +26,11 @@
               class="name-form"
               name="first-name"
               id="first-name"
+              required
             />
           </div>
 
-          <div class="form-container">
+          <div class="form__container">
             <div class="label__container">
               <span class="label">Имя</span>
               <span class="star">*</span>
@@ -40,10 +41,11 @@
               class="name-form"
               name="last-name"
               id="last-name"
+              required
             />
           </div>
 
-          <div class="form-container">
+          <div class="form__container">
             <div class="label__container">
               <span class="label">Отчество</span>
               <span class="star">*</span>
@@ -54,10 +56,11 @@
               class="name-form"
               name="patronym"
               id="patronym"
+              required
             />
           </div>
 
-          <div class="form-container middle-margin">
+          <div class="form__container middle-margin">
             <div class="label__container">
               <span class="label">Статус</span>
               <span class="star">*</span>
@@ -68,6 +71,7 @@
                 class="middle-form"
                 name="status"
                 id="status"
+                required
               />
               <span class="form-label">(не работающий, студент и т.д.)</span>
             </div>
@@ -77,11 +81,11 @@
         <div class="container">
           <div class="header">Документ, удостоверяющий личность</div>
 
-          <div class="forms-container">
-            <div class="form-container">
+          <div class="forms__container">
+            <div class="form__container">
               <div class="label__container">
                 <span class="label">Тип документа</span>
-                <span class="star doc-star">*</span>
+                <span class="star">*</span>
               </div>
 
               <select class="select-form" name="doc-type" id="doc-type">
@@ -129,15 +133,16 @@
               </select>
             </div>
 
-            <div class="form-container short-margin">
+            <div class="form__container short-margin">
               <div class="label__container">
-                <span class="label optional-label">Серия</span>
+                <span class="label">Серия</span>
+                <span class="star doc-star">*</span>
               </div>
 
               <input type="text" class="short-form" name="series" id="series" />
             </div>
 
-            <div class="form-container short-margin">
+            <div class="form__container short-margin">
               <div class="label__container">
                 <span class="label">Номер</span>
                 <span class="star">*</span>
@@ -148,10 +153,11 @@
                 class="short-form"
                 name="series-number"
                 id="series-number"
+                required
               />
             </div>
 
-            <div class="form-container short-margin">
+            <div class="form__container short-margin">
               <div class="label__container">
                 <span class="label">Дата выдачи</span>
                 <span class="star">*</span>
@@ -162,10 +168,11 @@
                 class="short-form"
                 name="passport-date"
                 id="passport-date"
+                required
               />
             </div>
 
-            <div class="form-container">
+            <div class="form__container">
               <div class="label__container">
                 <span class="label">Кем выдан</span>
                 <span class="star">*</span>
@@ -176,14 +183,15 @@
                 class="name-form"
                 name="issued-by"
                 id="issued-by"
+                required
               ></textarea>
             </div>
           </div>
         </div>
 
-        <div class="forms-container external-container">
-          <div class="address-container">
-            <div class="form-container form-large-container">
+        <div class="forms__container external__container">
+          <div class="address__container">
+            <div class="form__container form-large__container">
               <div class="label__container">
                 <span class="label">Адрес регистрации</span>
                 <span class="star">*</span>
@@ -194,16 +202,17 @@
                 class="name-form"
                 name="reg-address"
                 id="reg-address"
+                required
               ></textarea>
             </div>
 
             <div class="buttons-container">
-              <button class="clear">Очистить</button>
+              <button class="clear reg-address__clear">Очистить</button>
               <button class="check-dir">Выбрать из справочника</button>
             </div>
           </div>
 
-          <div class="form-container short-margin">
+          <div class="form__container short-margin">
             <div class="label__container">
               <span class="label optional-label">Квартира</span>
             </div>
@@ -217,7 +226,7 @@
           </div>
         </div>
 
-        <div class="form-container checkbox-address-container">
+        <div class="form__container checkbox-address__container">
           <input
             type="checkbox"
             class="address-checkbox"
@@ -232,39 +241,40 @@
           </div>
         </div>
 
-        <div class="forms-container external-container">
-          <div class="post-address__container">
-            <div class="address-container">
-              <div class="form-container form-large-container">
-                <div class="label__container">
-                  <span class="label">Почтовый адрес</span>
-                  <span class="star">*</span>
-                </div>
-
-                <textarea
-                  cols="2"
-                  class="name-form"
-                  name="post-address"
-                  id="post-address"
-                ></textarea>
+        <div
+          class="forms__container external__container post-address__container"
+        >
+          <div class="address__container">
+            <div class="form__container form-large__container">
+              <div class="label__container">
+                <span class="label">Почтовый адрес</span>
+                <span class="star">*</span>
               </div>
 
-              <div class="buttons-container">
-                <button class="clear">Очистить</button>
-                <button class="check-dir">Выбрать из справочника</button>
-              </div>
+              <textarea
+                cols="2"
+                class="name-form"
+                name="post-address"
+                id="post-address"
+                required
+              ></textarea>
             </div>
 
-            <div class="form-container short-margin">
-              <div class="label__container">
-                <span class="label optional-label">Квартира</span>
-              </div>
-
-              <input type="name" class="short-form" name="flat" id="flat" />
+            <div class="buttons-container">
+              <button class="clear post-address__clear">Очистить</button>
+              <button class="check-dir">Выбрать из справочника</button>
             </div>
           </div>
 
-          <div class="form-container middle-margin">
+          <div class="form__container short-margin">
+            <div class="label__container">
+              <span class="label optional-label">Квартира</span>
+            </div>
+
+            <input type="name" class="short-form" name="flat" id="flat" />
+          </div>
+
+          <div class="form__container middle-margin">
             <div class="label__container">
               <span class="label optional-label">E-mail</span>
             </div>
@@ -272,7 +282,7 @@
             <input type="email" class="middle-form" name="email" id="email" />
           </div>
 
-          <div class="form-container middle-margin">
+          <div class="form__container middle-margin">
             <div class="label__container">
               <span class="label optional-label">Телефон(ы)</span>
             </div>
@@ -291,8 +301,8 @@
         </div>
         <div class="container">
           <div class="header">Информация о ребенке</div>
-          <div class="forms-container">
-            <div class="form-container">
+          <div class="forms__container">
+            <div class="form__container">
               <div class="label__container">
                 <span class="label">Фамилия</span>
                 <span class="star">*</span>
@@ -303,10 +313,11 @@
                 class="name-form"
                 name="first-name-child"
                 id="first-name-child"
+                required
               />
             </div>
 
-            <div class="form-container">
+            <div class="form__container">
               <div class="label__container">
                 <span class="label">Имя</span>
                 <span class="star">*</span>
@@ -317,10 +328,11 @@
                 class="name-form"
                 name="last-name-child"
                 id="last-name-child"
+                required
               />
             </div>
 
-            <div class="form-container">
+            <div class="form__container">
               <div class="label__container">
                 <span class="label">Отчество</span>
                 <span class="star">*</span>
@@ -331,10 +343,11 @@
                 class="name-form"
                 name="patronym-child"
                 id="patronym-child"
+                required
               />
             </div>
 
-            <div class="form-container short-margin">
+            <div class="form__container short-margin">
               <div class="label__container">
                 <span class="label">Дата рождения</span>
                 <span class="star">*</span>
@@ -345,13 +358,14 @@
                 class="short-form"
                 name="child-date"
                 id="child-date"
+                required
               />
             </div>
           </div>
         </div>
-        <div class="forms-container external-container">
+        <div class="forms__container external__container">
           <div
-            class="form-container form-large-container form-payment-container"
+            class="form__container form-large__container form-payment__container"
           >
             <div class="label__container">
               <span class="label">
@@ -368,6 +382,7 @@
                   name="payments"
                   id="postal-service"
                   value="postal-service"
+                  required
                 />
                 <div class="main-text">
                   организацию федеральной почтовой связи
@@ -387,8 +402,10 @@
           </div>
         </div>
 
-        <div class="forms-container external-container">
-          <div class="form-container short-margin form-large-container">
+        <div
+          class="forms__container external__container postal-service__container"
+        >
+          <div class="form__container short-margin form-large__container">
             <div class="label__container">
               <span class="label">
                 Номер организации федеральной почтовой связи
@@ -405,10 +422,10 @@
           </div>
         </div>
 
-        <div class="container requisites-container">
+        <div class="container requisites__container">
           <div class="header">Реквизиты моего счета</div>
-          <div class="forms-container">
-            <div class="form-container middle-margin">
+          <div class="forms__container">
+            <div class="form__container middle-margin">
               <div class="label__container">
                 <span class="label">Номер</span>
                 <span class="star">*</span>
@@ -422,7 +439,7 @@
               />
             </div>
 
-            <div class="form-container form-large-container">
+            <div class="form__container form-large__container">
               <div class="label__container">
                 <span class="label">Наименование банковской организации</span>
                 <span class="star">*</span>
@@ -440,7 +457,7 @@
               </div>
             </div>
 
-            <div class="form-container short-margin">
+            <div class="form__container short-margin">
               <div class="label__container">
                 <span class="label optional-label">№ филиала</span>
               </div>
@@ -453,7 +470,7 @@
               />
             </div>
 
-            <div class="form-container middle-margin">
+            <div class="form__container middle-margin">
               <div class="label__container">
                 <span class="label">БИК</span>
                 <span class="star">*</span>
@@ -462,7 +479,7 @@
               <input type="name" class="middle-form" name="bik" id="bik" />
             </div>
 
-            <div class="form-container middle-margin">
+            <div class="form__container middle-margin">
               <div class="label__container">
                 <span class="label">ИНН</span>
                 <span class="star">*</span>
@@ -471,7 +488,7 @@
               <input type="name" class="middle-form" name="inn" id="inn" />
             </div>
 
-            <div class="form-container middle-margin">
+            <div class="form__container middle-margin">
               <div class="label__container">
                 <span class="label">КПП</span>
                 <span class="star">*</span>
@@ -482,38 +499,40 @@
           </div>
         </div>
 
-        <div class="form-container checkbox-container">
-          <div class="agreement-container">
-            <span class="star">*</span>
-            <input
-              type="checkbox"
-              class="agreement-checkbox"
-              name="agreement"
-              id="agreement"
-            />
+        <div class="forms__container checkboxes__container">
+          <div class="form__container checkbox__container">
+            <div class="agreement__container">
+              <span class="star">*</span>
+              <input
+                type="checkbox"
+                class="agreement-checkbox"
+                name="agreement"
+                id="agreement"
+              />
+            </div>
+
+            <div class="label__container">
+              <span class="main-text">
+                в случае наступления обстоятельств, влекущих прекращение
+                выплаты, обязуюсь сообщить о них в органы социальной защиты в 5
+                дневный срок
+              </span>
+            </div>
           </div>
 
-          <div class="label__container">
-            <span class="main-text">
-              в случае наступления обстоятельств, влекущих прекращение выплаты,
-              обязуюсь сообщить о них в органы социальной защиты в 5 дневный
-              срок
-            </span>
-          </div>
-        </div>
+          <div class="form__container checkbox__container">
+            <div class="agreement__container optional-checkbox">
+              <input
+                type="checkbox"
+                class="employment-checkbox"
+                name="employment"
+                id="employment"
+              />
+            </div>
 
-        <div class="form-container checkbox-container">
-          <div class="agreement-container">
-            <input
-              type="checkbox"
-              class="employment-checkbox"
-              name="employment"
-              id="employment"
-            />
-          </div>
-
-          <div class="label__container">
-            <span class="main-text"> отсутствует трудовая книжка </span>
+            <div class="label__container">
+              <span class="main-text"> отсутствует трудовая книжка </span>
+            </div>
           </div>
         </div>
       </div>
@@ -521,24 +540,30 @@
       <div class="container">
         <div class="main-header header">Прилагаемые документы</div>
 
-        <div class="form-container">
-          <div class="label__container">
-            <span>Документ, подтверждающего личность</span>
+        <div class="form__container person-doc__container">
+          <div class="label__container person-doc__subcontainer">
+            <span class="person-doc__text">
+              Документ, подтверждающего личность
+            </span>
             <span class="star">*</span>
           </div>
-          <label for="person-doc">
-            <button class="person-doc__button">Прикрепить</button>
+          <div class="person-doc__file-upload">
+            <label for="person-doc" class="person-doc__label">
+              <button class="person-doc__button">Прикрепить</button>
+            </label>
             <input
               type="file"
               class="person-doc"
               name="person-doc"
               id="person-doc"
-              style="display: none"
+              required
             />
-          </label>
+          </div>
         </div>
       </div>
-      <button class="submit">Отправить</button>
+      <div class="submit__container">
+        <button class="submit">Отправить</button>
+      </div>
     </form>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
